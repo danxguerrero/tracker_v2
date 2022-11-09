@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reply Tracker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="https://sheetdb.io/api/v1/z2knl9k9a64b1" method="post" id="sheetdb-form">
+      <div class="container">
+        <h1>Reply Tracker</h1>
+        <hr>
+
+        <label for="date"><b>Repeat Password</b></label>
+        <input type="text" placeholder="Date" name="data[date]">
+    
+        <label for="ticket"><b>Ticket</b></label>
+        <input type="text" placeholder="Enter Ticket Number" name="data[ticket]" id="ticket-input" required>
+    
+        <label for="note"><b>Note</b></label>
+        <input type="text" placeholder="Enter Note" name="data[note]" id="note-input" required>
+    
+       
+    
+        <div class="clearfix">
+          <button type="submit" class="signupbtn" id="btn-enter">Enter</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- <div id="reply-table" class="table">
+      <table class="center">
+        <thead>
+          <th>Delete</th>
+          <th>Ticket Number</th>
+          <th>Note</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <button onclick="deleteRow()">Delete</button>
+    </div>
+  </div> -->
+
+  <div>
+    <ol id="reply-list"></ol>
+  </div>
+
+    <script src=app.js></script>
+  </body>
+</html>
