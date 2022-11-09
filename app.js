@@ -34,7 +34,7 @@ function displayInputs() {
         'beforeend',
         `<li>${ticketInput.value}: ${noteInput.value}`
         );
-}
+} 
 
 btnEnter.addEventListener('click', ()=> {
     appendReply();
